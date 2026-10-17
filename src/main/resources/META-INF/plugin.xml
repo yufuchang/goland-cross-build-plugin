@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>com.yunshangxietong.goland.crossbuild</id>
+    <name>Go 跨平台打包</name>
+    <vendor>yufuchang</vendor>
+    <description><![CDATA[扫描项目中的 main.go，在右侧工具窗口选择 Go 平台并构建可执行文件和 ZIP 包；常用平台按使用次数自动前置。]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.goland</depends>
+    <depends>org.jetbrains.plugins.go</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="Go 跨平台打包"
+                    anchor="right"
+                    icon="/icons/crossBuild.svg"
+                    factoryClass="com.github.yufuchang.crossbuild.CrossBuildToolWindowFactory"/>
+    </extensions>
+</idea-plugin>
+
